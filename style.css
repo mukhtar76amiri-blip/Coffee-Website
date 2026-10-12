@@ -213,10 +213,9 @@ header .navbar {
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
         display: block;
-        margin-top: 17px;
+        margin-top: 17px; 
         font-size: var(--font-size-1);
     }
-
     /* hero section responsive */
     
     .hero-section .section-content {
@@ -238,3 +237,5 @@ header .navbar {
     }
     
 }
+
+
