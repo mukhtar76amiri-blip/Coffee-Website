@@ -8,3 +8,39 @@ const  menuCloseButton = document.querySelector("#menu-close-button");
 });
 
   menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+
+   // initialize swiper 
+
+  const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 25,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // Responsive Break points
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1 
+    },
+    768: {
+      slidesPerView: 2 
+    },
+    1024: {
+      slidesPerView: 3 
+    }
+  } 
+
+});
