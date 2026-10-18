@@ -14,29 +14,29 @@
     <!--header/navbar-->
     <header>
         <nav class="navbar section-content">
-            <a href="#" class="nav-logo"><h2 class="logo-text">☕Coffee</h2></a>
+            <a href="#home" class="nav-logo"><h2 class="logo-text">☕Coffee</h2></a>
             <ul class="nav-menu">
                 
                 <button id="menu-close-button" class="fas fa-times"></button>
 
 
                 <li class="nav-items">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-link">Testmonials</a>
+                    <a href="#testimonial" class="nav-link">Testmonials</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
 
@@ -47,7 +47,7 @@
 
     <!--main-section-->
     <main>
-       <section class="hero-section">
+     <section class="hero-section" id="home">
             <div class="section-content">
                 <div class="hero-details">
                     <h1 class="title">best Coffee</h1>
@@ -66,10 +66,10 @@
                 </div>
 
             </div>
-       </section>
+     </section>
 
      <!-- About section -->
-       <section class="about-section">
+     <section class="about-section" id="about">
         <div class="section-content">
             <div class="about-image-warpper">
                 <img src="./img/about-section-img.jfif" alt="" class="about-image">
@@ -86,10 +86,10 @@
                 </div>
             </div> 
         </div>
-       </section>
+     </section>
 
      <!--Menu Section-->
-     <section class="menu-section">
+     <section class="menu-section" id="menu">
         <h2 class="section-title">Our Menu</h2>
         <div class="section-content">
             <ul class="menu-list">
@@ -128,7 +128,7 @@
      </section>
 
      <!-- testimonials section -->
-      <section class="testimonials-section">
+     <section class="testimonials-section" id="testimonial">
         <h2 class="section-title">Testimonials</h2>
         <div class="section-content">
             <div class="slider-container swiper">
@@ -166,10 +166,10 @@
                 </div>
             </div>
         </div>
-      </section>
+     </section>
 
-      <!-- Gallery section -->
-       <section class="gallery-section">
+     <!-- Gallery section -->
+     <section class="gallery-section" id="gallery">
         <h2 class="section-title">Gallery</h2>
         <div class="section-content">
             <ul class="gallery-list">
@@ -193,7 +193,50 @@
                 </li>
             </ul>
         </div>
-       </section>
+     </section>
+
+     <!-- contact section -->
+     <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                     <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                     <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                     <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 5PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday : 10:00 AM - 3PM</p>
+                    </li>
+                     <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>sunday: Closed</p>
+                    </li> 
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>WWW.coffeeshop.com</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea class="form-input" placeholder="Your Message" required></textarea>
+                    <bottun class="submite-botton">Submite</bottun>
+                </form>
+            </div>
+     </section>
     </main>
 
     
