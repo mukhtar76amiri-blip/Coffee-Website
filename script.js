@@ -1,3 +1,4 @@
+const  navLink = document.querySelectorAll(".nav-menu .nav-link");
 const  menuOpenButton = document.querySelector("#menu-open-button");
 const  menuCloseButton = document.querySelector("#menu-close-button");
 
@@ -5,13 +6,16 @@ const  menuCloseButton = document.querySelector("#menu-close-button");
   menuOpenButton.addEventListener("click", () => {
     // toggle mobile visibility
     document.body.classList.toggle("show-mobile-menu");
-});
-
+  });
+   // close menu when the close bottun clicked
   menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
+   // close menu when the nav link is clicked
+  navLink.forEach(link => {
+    link.addEventListener("click" , () => menuOpenButton.click());
+  });
 
    // initialize swiper 
-
   const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   grabCursor: true,
@@ -43,4 +47,4 @@ const  menuCloseButton = document.querySelector("#menu-close-button");
     }
   } 
 
-});
+  });
